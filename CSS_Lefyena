@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+
+font-family: 'Serif', Garamond;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body{
+margin:0 auto;
+} 
+
+     /*BEGINING SECTION*/
+
+/*Head PAGE*/
+
+section.section-top-page{
+    background-color:#1e4e54 ;
+    background-size: cover;
+     height: 88vh;
+} 
+header.header{
+    display: flex;
+    justify-content:center;
+}
+
+header.header img{
+    width: 170px;
+    position: absolute;
+    justify-content: center;
+    margin-top: 10%;
+
+}
+
+/* END HEAD PAGE*/
+
+
+/*NAV BARRE*/
+nav.nav{
+    display: flex;
+    justify-content:space-evenly;
+    position: absolute;
+    bottom: 100px;
+    margin-top: 20px;
+    list-style: none;
+    width: 470px;
+   justify-content: space- space-between;
+    
+}
+nav.nav li a{
+    color: white;
+    text-decoration:none;
+    font-size: 20px;
+    
+}
+nav.nav li a:hover{
+    color: #dda34c;
+}
+
+.landing-page {
+   padding: 20px 50px;
+}
+
+.scroll-down{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 106px;
+}
+.scroll-down:hover{
+    color: white;
+}
+ /*AND NAV BARRE*/
+
+ /*PICTURES SECTION*/
+ 
+.section-title {
+    margin: 20px;
+   font-size: 18px;
+   font-family: 'Serif', Garamond;
+   font-weight:70px;
+   position: relative;
+}
+
+.section-title::before {
+   content: "";
+   position: absolute;
+   background-color: #1e4e54;
+   width: 30px;
+   height: 2px;
+   bottom: 0;
+}
+
+.articles{
+   margin:50px 20px ;
+   
+ }
+          /* ALL PICTURES */
+ .pictures{
+   display:flex;
+   flex-wrap:wrap;
+   justify-content: center;
+ }
+ .pictures .picture{
+   margin-right: 30px;
+   cursor:pointer;
+   
+ }
+ .pictures .picture img{
+   width: 350px;
+ }
+ .pictures .picture .picture-header{
+   display: flex;
+   flex-wrap:wrap;
+   justify-content: space-between;
+   font-weight:100;
+   font-size: 10px;
+   margin-top: 10px;
+   margin-bottom: 5px;
+  
+   
+ }
+ .picture-header h4{
+  font-size: 20px;
+ }
+
+ .pictures .picture .picture-body p{
+   margin-top: -10px;
+   font-family: 'Open Sans', sans-serif;
+ }            
+ 
+ .pictures .picture .picture-body{
+   display: flex;
+   flex-wrap:wrap;
+   justify-content: space-between;
+ }
+.icon a{
+   padding-right:10px ;
+   color: #1e4e54;
+   text-decoration: none;
+ }
+ .icon a:hover{
+  transition: 0.4s;
+  color: #427a81;
+ }
+  a.link{ 
+    
+      width: 300px;
+      padding: 10px 20px 10px 20px;
+      text-decoration:none;
+      background-color: #1e4e54;
+      color:white;
+      transition: 0.4s;  
+      font-size: 18px;
+         border-radius: 9px;
+         box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);              
+    
+  }
+  a.link:hover{
+    transition: 0.4s;
+    background-color: #427a81;
+    color:white;
+  }
+
+ /* END ALL PICTURES */
+
+ /* END PICTURES SECTION */    
+ 
+ 
+/* TUTORIAL AND COURS SECTION*/
+.tuto .video{
+margin-top: 80px;
+margin:40px;
+width: 90%;
+}
+.tuto .video iframe{
+  display: flex;
+ justify-content: center;
+border:none;
+border-radius: 10px;
+width: 100%;
+height: 250px;
+}
+
+/* COURS PART*/
+div.cour{
+    text-align: center;
+    margin-top: 50px;
+  }
+div.cour p{
+    margin: 50px;
+    font-size: 18px;
+}
+
+
+   
+/* END OF TUTORIAL AND COURS SECTION*/
+
+/* SECTION CLIENTS VUES */
+ 
+.avie-client {
+    display:flex;
+    flex-direction: row;
+   justify-content: space-between;
+   max-width:500px; 
+  } 
+  .avie-client .avis1 img{
+    width:450px;
+  }
+  .avie-client .avis2 img{
+    width: 420px;
+  }
+ 
+  .avie-client .avis3 img{
+   width: 450px;
+ margin-top: 10px;
+  }
+ /* END SECTION CLIENTS VUES */
+
+/* FOOT SECTION */
+ footer {
+     margin-top: 100px;
+     background-color:#1e4e54;
+     padding: 30px;
+     color: #fff;
+     display: flex;
+     flex-wrap:wrap;
+     justify-content: space-between;
+   }
+   footer .social-media{
+     display: flex;
+   }
+   footer .social-media p{
+     margin-right: 15px;
+     border: 1px solid #fff;
+     border-radius: 100%;
+     padding: 5px;
+     text-align:center;
+     width: 35px;
+     height:35px ;
+     cursor:pointer;
+     
+   }
+ 
+ .social-media p a{
+     text-decoration: none;
+     color:white
+     ;
+     
+ }
+ .social-media p a i{
+    text-align:center;
+
+ }
+/* END FOOT SECTION */
+   
+   @media screen and (max-width: 640px){
+     nav .a .link, nav h1{
+       display:none;
+     }
+     
+     carousel-inner img {
+       width: 25%;
+       height: 25%;
+     }
+     a.scroll-down{
+       display: none;
+     }
+    
+   }
+
+ 
