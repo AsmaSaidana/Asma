@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vente en ligne</title>
+    <link rel="shortcut icon" href="images/logotitre.png" />
+
+    <link rel="stylesheet" href="Css/StyleCour.css" />
+  </head>
+  <body>
+    <div class="formulaire">
+      <img src="images/logotitre.png" alt="logo page" />
+      <h1>vente en ligne</h1>
+      <p>
+        Vous voulez commander votre propre commande avec un choix different!<br />
+        N’hésitez pas à utiliser ce formulaire pour commander !
+      </p>
+      <form onsubmit="sendMail(); reset();">
+        <div class="n_p">
+          <div class="nom">
+            <label for="nom">Nom</label>
+            <input
+              type="text"
+              id="nom"
+              name="nom"
+              placeholder="Entrez votre Nom"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="prenom">
+            <label for="prenom">Prénom</label>
+            <input
+              type="prenom"
+              id="prenom"
+              name="prenom"
+              placeholder="Entrez votre Prénom"
+              autocomplete="off"
+              required
+            />
+          </div>
+        </div>
+
+        <div>
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Exemple:monadresse@mail.com"
+            autocomplete="off"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="tel">Télephone</label>
+          <input
+            type="tel"
+            id="tel"
+            name="tel"
+            maxlength="8"
+            placeholder="88-888-888"
+            autocomplete="off"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="Adresse">Adresse</label>
+          <input
+            type="text"
+            id="Adresse"
+            placeholder="Monastir,Ourdanin,rue hassin abd el aziz"
+            autocomplete="off"
+          />
+        </div>
+        <div>
+          <label for="CodePostal">Code Postal</label>
+          <input
+            type="text"
+            id="CodePostal"
+            placeholder="5010"
+            maxlength="4"
+            autocomplete="off"
+          />
+        </div>
+
+        <div>
+          <label for="ville">ville</label>
+          <br />
+          <select name="ville" id="ville" placeholder="Monastir">
+            <option value="" disabled selected hidden>
+              Choisissez votre Ville
+            </option>
+            <option value="Monastir">Monastir</option>
+            <option value="Sousse">Sousse</option>
+            <option value="Sfax">Sfax</option>
+            <option value="tunis">tunis</option>
+            <option value="Gabes">Gabes</option>
+            <option value="autre">Autre...</option>
+          </select>
+        </div>
+        <div>
+          <label for="commentaire">Commentaire</label>
+          <textarea
+            id="commentaire"
+            name="commentaire"
+            placeholder="Ecrire une commentaire...."
+            autocomplete="off"
+          ></textarea>
+        </div>
+        <div class="check">
+          <input
+            type="checkbox"
+            name="telephone"
+            id="teleph"
+            required
+            autocomplete="off"
+          />
+          <p>Lefyena a le droit de vous appeler.</p>
+        </div>
+        <button type="submit">
+          <p>Envoyer</p>
+        </button>
+        <button type="reset"><p>Annuler</p></button>
+      </form>
+    </div>
+
+    <script>
+      function sendMail() {
+        alert(
+          "Un email sera vous envoyé pour la confirmation \n Lefyena vos remerize à votre confiance."
+        );
+      }
+    </script>
+  </body>
+</html>
