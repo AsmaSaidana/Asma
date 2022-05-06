@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscription dans les cours</title>
+    <link rel="shortcut icon" href="images/logotitre.png" />
+
+    <link rel="stylesheet" href="css/StyleCour.css" />
+  </head>
+  <body>
+    <div class="formulaire">
+      <img src="images/logotitre.png" alt="logo page" />
+
+      <h1>Inscription en ligne</h1>
+      <p>
+        Vous voulez apprendre les astuces de broderie et ouvrir votre propre
+        projet!<br />
+        N’hésitez pas à utiliser ce formulaire pour atteindre les cours !
+      </p>
+      <form onsubmit="sendMail(); reset();">
+        <div class="n_p">
+          <div class="nom">
+            <label for="nom">Nom</label>
+            <input
+              type="text"
+              id="nom"
+              name="nom"
+              placeholder="Entrez votre nom"
+              required
+            />
+          </div>
+          <div class="prenom">
+            <label for="prenom">Prénom</label>
+            <input
+              type="prenom"
+              id="prenom"
+              name="prenom"
+              placeholder="Entrez votre Prénom"
+              required
+            />
+          </div>
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Exemple:monadresse@mail.com"
+            required
+          />
+        </div>
+        <div>
+          <label for="tel">Télephone</label>
+          <input
+            type="tel"
+            id="tel"
+            name="tel"
+            placeholder="88-888-888"
+            maxlength="8"
+            required
+          />
+        </div>
+        <div>
+          <label for="month">Date</label>
+          <input
+            id="date"
+            type="month"
+            value="2022-02"
+            placeholder="2022-02"
+            class="month"
+            required
+          />
+        </div>
+        <div>
+          <label for="pays">Pays</label>
+          <br />
+          <select name="pays" id="pays" placeholder="Tunisie">
+            <option value="" disabled selected hidden>
+              Choisissez votre pays
+            </option>
+            <option value="Tunisie ">Tunisie</option>
+            <option value="Algérie">Algérie</option>
+            <option value="Libye">Libye</option>
+            <option value="Maroc">Maroc</option>
+            <option value="Égypte">Égypte</option>
+            <option value="autre">Autre...</option>
+          </select>
+        </div>
+        <div>
+          <label for="commentaire">Commentaire</label>
+          <textarea
+            id="commentaire"
+            name="commentaire"
+            placeholder="Ecrire une commentaire...."
+          ></textarea>
+        </div>
+        <div class="check">
+          <input type="checkbox" name="telephone" id="teleph" required />
+          <p>Lefyena a le droit de vous appeler.</p>
+        </div>
+
+        <button type="submit">Envoyer</button>
+        <button type="reset">Annuler</button>
+      </form>
+    </div>
+
+    <script>
+      function sendMail() {
+        alert(
+          "Un email sera vous envoyé pour la confirmation \n Lefyena vos remerize à votre confiance."
+        );
+      }
+    </script>
+  </body>
+</html>
